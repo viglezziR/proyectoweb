@@ -1,0 +1,383 @@
+body {
+    margin: 0.5rem 0.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.stick {
+    background: linear-gradient(45deg, #6a82fbc2, #fc5c7cb6);
+    height: 100%;
+    width: 100%;
+}
+
+.images-responsive {
+    width: 100%;
+    height: auto;
+    
+}
+
+p {
+    font-size: medium;
+    font-weight: 600;
+}
+
+/*ENCABEZADO*/
+
+.encabezado {
+    height: min-content;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.encabezado h1 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+/*MENU*/
+
+.menu {
+    display: flex;
+    align-items: baseline;
+    margin: 0.3rem 0rem 0rem 0rem;
+    border-bottom: 0.3rem solid white;
+    background-color: #6a82fb;
+    position: sticky;
+    top: 0rem;
+    
+}
+
+.navigation li {
+    display: none;
+    flex-direction: column;
+    align-items: baseline;
+    list-style: none;
+    padding: 0.7rem;
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+
+.navigation.show li {
+    display: flex;
+}
+
+.btn-menu {
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.menu li:hover {
+    background-color: #455294;
+}
+
+.menu li a {
+    /*estilo links automaticos*/
+    text-decoration: none;
+    color: black;
+}
+
+/*BODY INDEX*/
+
+.contenedor-general {
+    margin: 1% 7%;
+}
+
+.tecnologias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1% 7%;
+}
+
+.contenido {
+    text-align: justify;
+}
+
+h2 {
+    text-align: center;
+}
+
+.contacto {
+    text-decoration: underline;
+    color: aquamarine;
+    font-weight: bold;
+}
+
+.divisor {
+    border-bottom: 0.3rem solid white;
+    width: 80%;
+    margin: auto;
+    padding: 2rem 0 0 0;
+}
+
+/*TABLA*/
+.botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.botonFormulario {
+    width: 10rem;
+    justify-content: center;
+}
+
+.contenedor_tabla_lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+th,
+.fondos h4 {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+td,
+tr {
+    border: none;
+    border-bottom: 0.1rem solid #49454567;
+    padding: 0.7rem;
+}
+
+table {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+li,
+h4 {
+    font-size: 1.2rem;
+    margin: 0%;
+    align-items: center;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.fondos ul li::before {
+    content: "\2022";
+    color: #455294;
+    font-weight: bold;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1.2rem;
+}
+
+.fondos {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 2rem 1.5rem;
+}
+
+/*FORMULARIO CONTACTO*/
+
+.contenedorFormularioCaptcha {
+    background: linear-gradient(45deg, #6a82fbc2, #fc5c7cb6);
+    color: #49454567;
+    align-items: center;
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorFormularioCaptcha h1 {
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+    margin: 0.8rem 0rem;
+    font-weight: 800;
+}
+
+.formularios {
+    width: 20rem;
+    background-color: white;
+    padding: 0.8rem 0rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.botonEnviar {
+    display: none;
+    width: 15rem;
+    justify-content: center;
+}
+
+.mostrarBotonEnviar {
+    display: inline;
+}
+
+form .grupo {
+    position: relative;
+    margin: 3rem;
+}
+
+input,
+textarea {
+    background: none;
+    color: #c6c6c6;
+    font-size: 1.2rem;
+    padding: 0.7rem 0.7rem 0.7rem 0.35rem;
+    width: 100%;
+    border: none;
+    border-bottom: 0.07rem solid #49454567;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    color: rgb(94, 93, 93);
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+    position: absolute;
+    top: -0.9rem;
+    font-size: 0.75rem;
+    color: #2196F3;
+}
+
+label {
+    color: #49454567;
+    font-size: 1rem;
+    position: absolute;
+    left: 0.4rem;
+    top: 0.7rem;
+    transition: 0.3s ease all;
+    pointer-events: none;
+}
+
+button {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    margin: 1rem 1rem;
+    font-weight: bold;
+}
+
+#captcha {
+    background-color: black;
+    color: white;
+    border-radius: 0.25rem;
+    width: fit-content;
+}
+
+.captcha.show {
+    display: none;
+}
+
+#send,
+#text {
+    width: fit-content;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0.3rem 0rem 0rem 0rem;
+    border-bottom: 0.3rem solid white;
+    background-color: #6a82fb;
+    top: 0rem;
+}
+
+.icono {
+    max-width: 3rem;
+    max-height: 3rem;
+}
+
+@media only screen and (min-width:481px) {
+    /* cambio medida query */
+
+    .encabezado h1 {
+        font-size: 2.5rem;
+    }
+
+    /*MENU*/
+
+    .menu {
+        align-items: center;
+        justify-content: center;
+        height: 3.5rem;
+    }
+
+    .navigation li {
+        display: flex;
+        font-size: 1.5rem;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .btn-menu {
+        display: none;
+    }
+
+    /*BODY INDEX*/
+
+    .tecnologias {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0% 5%;
+    }
+
+    .contenido {
+        width: 70%;
+        text-align: justify;
+        margin: 2%;
+    }
+
+    .icono {
+        max-width: 6rem;
+        max-height: 6rem;
+    }
+
+    /*TABLA*/
+
+    .contenedor_tabla_lista {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    /*FORMULARIO*/
+
+    .formularios {
+        width: 30%;
+        min-width: 25rem;
+        justify-content: center;
+    }
+
+    .botones {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .botonFormulario {
+        width: auto;
+
+    }
+}

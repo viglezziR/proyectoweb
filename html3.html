@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronos3D</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <figure><img src="images/logo.png" alt="logo-CHRONOS" class="images-responsive"></figure>
+        <div>
+            <h1>CHRONOS IMPRESIONES 3D</h1>
+        </div>
+    </header>
+
+    <div class="stick">
+        <!-- menu sticky -->
+
+        <nav class="menu">
+            <div class="btn-menu"><a>MENÚ</a></div>
+            <ul class="navigation">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="html2.html">Productos</a></li>
+                <li><a href="html3.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="contenedorFormularioCaptcha">
+            <form class="formularios" action="">
+                <div>
+                    <h1>Formulario de contacto</h1>
+                    <div class="grupo">
+                        <input type="text" name="nombre" required>
+                        <label>Nombre y Apellido</label>
+                    </div>
+                    <div class="grupo">
+                        <input type="email" name="mail" required>
+                        <label>Mail</label>
+                    </div>
+                    <div class="grupo">
+                        <input type="number" name="telefono" required>
+                        <label>Teléfono</label>
+                    </div>
+                    <div class="grupo">
+                        <textarea name="comentario" rows="3" required></textarea>
+                        <label>Ingrese su consulta</label>
+                    </div>
+                    <div class="grupo">
+                        <button class="botonEnviar">Enviar</button>
+                    </div>
+                </div>
+            </form>
+            <div id="correcto" class="formularios">
+                <h1 id="captcha"></h1>
+                <input id="text" type="text" value="" placeholder="Ingrese el captcha" />
+                <h4 id="result"></h4>
+                <button type="submit" id="send">Validar captcha</button>
+            </div>
+        </div>
+
+    </div> <!-- menu sticky -->
+
+    <footer class="footer">
+        <p>Chronos 3D - Tandil, Buenos Aires, Argentina</p>
+        <figure><a href="https://www.instagram.com/chronos.3d/"><img src="images/Ig.png" alt="logoInstagram"
+                    class="icono"></a></figure>
+    </footer>
+
+    <script src="js/captcha.js"></script>
+    <script src="js/menu.js"></script>
+
+</body>
+
+</html>

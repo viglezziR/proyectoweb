@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronos3D</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <figure><img src="images/logo.png" alt="logo-CHRONOS" class="images-responsive"></figure>
+        <div>
+            <h1>CHRONOS IMPRESIONES 3D</h1>
+        </div>
+    </header>
+
+    <div class="stick">
+        <!-- menu sticky -->
+
+        <nav class="menu">
+            <div class="btn-menu"><a>MENÚ</a></div>
+            <ul class="navigation">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="html2.html">Productos</a></li>
+                <li><a href="html3.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="contenedor-general">
+            <h3>Productos impresos en filamento</h3>
+            <p>En la siguiente tabla podran encontraran los valores de nuestros productos más pedidos <a
+                    class="contacto" href="https://www.instagram.com/chronos.3d/">(verlos aquí)</a>,
+                para solicitar un modelo
+                personalizado <a class="contacto" href="html3.html">escribinos</a>.</p>
+        </div>
+        <div class="contenedor_tabla_lista">
+            <div class="fondos">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Productos</th>
+                            <th>Chico</th>
+                            <th>Mediano</th>
+                            <th>Grande</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpoTabla">
+                    </tbody>
+                </table>
+
+                <div class="formularios">
+                    <input class="formularioProductos" id="nombreProducto" type="text" nombre="nombreProducto" required
+                        placeholder="Producto">
+                    <input class="formularioProductos" id="chico" type="number" nombre="chico" required
+                        placeholder="Valor tamaño chico">
+                    <input class="formularioProductos" id="mediano" type="number" nombre="mediano" required
+                        placeholder="Valor tamaño mediano">
+                    <input class="formularioProductos" id="grande" type="number" nombre="grande" required
+                        placeholder="Valor tamaño grande">
+                    <div class="botones">
+                        <button class="botonFormulario" id="btn-agregar">Agregar</button>
+                        <button class="botonFormulario" id="btn-agregar_X3">Agregar X3</button>
+                        <button class="botonFormulario" id="btn-vaciar">Vaciar tabla</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="fondos">
+                <h4>Colores Disponibles</h4>
+                <ul>
+                    <li>Negro</li>
+                    <li>Blanco</li>
+                    <li>Celeste</li>
+                    <li>Amarillo</li>
+                    <li>Rojo</li>
+                    <li>Naranja</li>
+                    <li>Rosa</li>
+                    <li>Fucsia</li>
+                    <li>Aqua</li>
+                    <li>Verde manzana</li>
+                    <li>Cobalto</li>
+                    <li>Violeta</li>
+                    <li>Verde Oscuro</li>
+                    <li>Grafito</li>
+                    <li>Fucsia</li>
+                    <li>Mármol</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="divisor"></div>
+
+        <div class="contenedor-general">
+            <h3>Productos impresos en resina</h3>
+            <p>En esta clase de tecnología, ofrecemos el servicio especializado tanto para joyería como para
+                odontología, cumpliendo todos los estándares necesarios para dichas aplicaciones, tanto de precisión
+                como medicinales. Para más información<a class="contacto" href="html3.html">escribinos</a>.
+            </p>
+        </div>
+
+
+        <div class="tecnologias">
+            <div><img src="images/joyeria.jpg" alt="collar impreso en resina" class="images-responsive"></div>
+            <div class="contenido">
+                <h3>Joyería</h3>
+                <p>La impresión 3D propone un atajo a los procesos tradicionales de fundición por ceras perdidas.
+                    Menor cantidad de pasos, mayores posibilidades de creación y ahorros en materiales, son algunas de
+                    las ventajas en su aplicación en este negocio.</p>
+            </div>
+        </div>
+        <div class="tecnologias">
+            <div class="contenido">
+                <h3>Medicina y Odontología</h3>
+                <p>La materialización de bio-modelos para aplicar en la
+                    práctica y planificación quirúrgica de diferentes ramas de la medicina es ya moneda corriente con la
+                    impresión 3D. Desde archivos exportables de herramientas como scanners, tomógrafos o ecógrafos, es
+                    posible materializar la totalidad o parte del modelo obtenido digitalmente. Esto permite al
+                    profesional trabajar y planificar prácticas sobre modelos personalizados y reales de un paciente.
+                </p>
+            </div>
+            <div><img src="images/odontologia.jpg" alt="craneo impreso en resina" class="images-responsive"></div>
+        </div>
+
+    </div>
+    </div> <!-- menu sticky -->
+
+    <footer class="footer">
+        <p>Chronos 3D - Tandil, Buenos Aires, Argentina
+        </p>
+        <figure><a href="https://www.instagram.com/chronos.3d/"><img src="images/Ig.png" alt="logoInstagram"
+                    class="icono"></a></figure>
+    </footer>
+
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/tabla.js"></script>
+</body>
+
+</html>
